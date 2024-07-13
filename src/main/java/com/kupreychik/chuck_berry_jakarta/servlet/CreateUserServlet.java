@@ -50,18 +50,27 @@ public class CreateUserServlet extends HttpServlet {
         String email = request.getParameter(EMAIL);
         UserRole role = UserRole.valueOf(request.getParameter(ROLE));
 
-        if (userService.isEmailValid(email)) {
+        if (userService.notValidEmail(email)) {
             request.setAttribute(ERROR, userService.getMessage(ERROR_EMAIL_EXISTS));
+            //TODO: put correct role
 
             request.setAttribute(NAME, name);
             request.setAttribute(EMAIL, email);
+            request.setAttribute("current_role", role);
             request.setAttribute(ROLES, UserRole.values());
 
             request.getRequestDispatcher(CREATE_USER_JSP).forward(request, response);
             return;
         }
-        if (userService.isNameValid(name)) {
+        if (userService.notValidName(name)) {
             request.setAttribute("error", userService.getMessage(ERROR_NAME_EXISTS));
+            //TODO: put correct role
+
+            request.setAttribute(NAME, name);
+            request.setAttribute(EMAIL, email);
+            request.setAttribute("current_role", role);
+            request.setAttribute(ROLES, UserRole.values());
+
             request.getRequestDispatcher(CREATE_USER_JSP).forward(request, response);
             return;
         }

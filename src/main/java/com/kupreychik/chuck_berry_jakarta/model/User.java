@@ -11,6 +11,7 @@ import lombok.ToString;
 @Setter
 @AllArgsConstructor
 public class User {
+    //TODO: add ID
     private String name;
     private String email;
     private UserRole role;

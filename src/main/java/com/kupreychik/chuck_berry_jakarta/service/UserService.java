@@ -15,6 +15,9 @@ import static com.kupreychik.chuck_berry_jakarta.model.enums.UserRole.*;
 
 @Getter
 public class UserService {
+    //TODO:
+    // 1. get todos from https://jsonplaceholder.typicode.com/todos and show it
+    // 2. поиск по title | search
     private final List<User> users = new CopyOnWriteArrayList<>();
     private final UserValidator validator;
     private final ResourceBundle messages;
@@ -47,11 +50,11 @@ public class UserService {
         users.removeIf(user -> user.getName().equals(name));
     }
 
-    public boolean isEmailValid(String email) {
+    public boolean notValidEmail(String email) {
         return validator.isEmailExists(email, this.users);
     }
 
-    public boolean isNameValid(String name) {
+    public boolean notValidName(String name) {
         return validator.isNameExists(name, this.users);
     }
 
@@ -61,8 +64,8 @@ public class UserService {
 
     private void fillDefaultUsers() {
         users.add(new User("Anton", "email@email.com", ADMIN));
-        users.add(new User("Ivan", "iavn@email.com", CUSTOMER));
-        users.add(new User("Sergey", "serget@email.com", MANAGER));
+        users.add(new User("Ivan", "ivan@email.com", CUSTOMER));
+        users.add(new User("Sergey", "sergey@email.com", MANAGER));
         users.add(new User("Katya", "katya@email.com", CUSTOMER));
     }
 }

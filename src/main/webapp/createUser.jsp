@@ -28,9 +28,16 @@
         </div>
         <div class="form-group">
             <label for="role">Role</label>
-            <select class="form-control" id="role" name="role"  required>
+            <select class="form-control" id="role" name="role" required>
                 <c:forEach var="role" items="${roles}">
-                    <option value="${role}">${role}</option>
+                    <c:choose>
+                        <c:when test="${role == current_role}">
+                            <option selected="selected" value="${role}">${role}</option>
+                        </c:when>
+                        <c:otherwise>
+                            <option value="${role}">${role}</option>
+                        </c:otherwise>
+                    </c:choose>
                 </c:forEach>
             </select>
         </div>
