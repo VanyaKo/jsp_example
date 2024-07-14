@@ -1,6 +1,6 @@
 package com.kupreychik.chuck_berry_jakarta.validators;
 
-import com.kupreychik.chuck_berry_jakarta.model.User;
+import com.kupreychik.chuck_berry_jakarta.model.users.User;
 import lombok.NoArgsConstructor;
 
 import java.util.List;

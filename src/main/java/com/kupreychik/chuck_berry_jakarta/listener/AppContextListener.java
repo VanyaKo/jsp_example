@@ -1,5 +1,6 @@
 package com.kupreychik.chuck_berry_jakarta.listener;
 
+import com.kupreychik.chuck_berry_jakarta.service.TodoService;
 import com.kupreychik.chuck_berry_jakarta.service.UserService;
 import com.kupreychik.chuck_berry_jakarta.validators.UserValidator;
 import jakarta.servlet.ServletContext;
@@ -11,6 +12,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.ResourceBundle;
 
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.TODO_SERVICE;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.USER_SERVICE;
 
 @WebListener
@@ -24,8 +26,10 @@ public class AppContextListener implements ServletContextListener {
 
         UserValidator userValidator = new UserValidator();
         UserService userService = new UserService(userValidator, resourceBundle);
+        TodoService todoService = new TodoService();
 
         ctx.setAttribute(USER_SERVICE, userService);
+        ctx.setAttribute(TODO_SERVICE, todoService);
 
         ServletContextListener.super.contextInitialized(sce);
     }

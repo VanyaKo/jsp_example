@@ -1,7 +1,7 @@
 package com.kupreychik.chuck_berry_jakarta.servlet;
 
-import com.kupreychik.chuck_berry_jakarta.model.User;
-import com.kupreychik.chuck_berry_jakarta.model.enums.UserRole;
+import com.kupreychik.chuck_berry_jakarta.model.users.User;
+import com.kupreychik.chuck_berry_jakarta.model.users.enums.UserRole;
 import com.kupreychik.chuck_berry_jakarta.service.UserService;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletContext;
@@ -18,7 +18,6 @@ import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.CREATE_USER_JS
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.EMAIL;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.ERROR;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.ERROR_EMAIL_EXISTS;
-import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.ERROR_NAME_EXISTS;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.NAME;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.ROLE;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.ROLES;

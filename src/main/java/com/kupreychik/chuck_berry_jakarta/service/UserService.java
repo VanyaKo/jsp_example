@@ -1,8 +1,8 @@
 package com.kupreychik.chuck_berry_jakarta.service;
 
 
-import com.kupreychik.chuck_berry_jakarta.model.User;
-import com.kupreychik.chuck_berry_jakarta.model.enums.UserRole;
+import com.kupreychik.chuck_berry_jakarta.model.users.User;
+import com.kupreychik.chuck_berry_jakarta.model.users.enums.UserRole;
 import com.kupreychik.chuck_berry_jakarta.validators.UserValidator;
 import lombok.Getter;
 
@@ -11,13 +11,10 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import static com.kupreychik.chuck_berry_jakarta.model.enums.UserRole.*;
+import static com.kupreychik.chuck_berry_jakarta.model.users.enums.UserRole.*;
 
 @Getter
 public class UserService {
-    //TODO:
-    // 1. get todos from https://jsonplaceholder.typicode.com/todos and show it
-    // 2. поиск по title | search
     private final List<User> users = new CopyOnWriteArrayList<>();
     private final UserValidator validator;
     private final ResourceBundle messages;

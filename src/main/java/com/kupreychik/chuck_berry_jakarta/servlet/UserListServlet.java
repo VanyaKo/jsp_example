@@ -24,7 +24,7 @@ public class UserListServlet extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
         ServletContext servletContext = config.getServletContext();
-        this.userService = (UserService) servletContext.getAttribute("userService");
+        this.userService = (UserService) servletContext.getAttribute(USER_SERVICE);
     }
 
     @Override

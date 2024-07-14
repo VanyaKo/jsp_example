@@ -1,6 +1,5 @@
 package com.kupreychik.chuck_berry_jakarta.servlet;
 
-import com.kupreychik.chuck_berry_jakarta.model.User;
 import com.kupreychik.chuck_berry_jakarta.service.UserService;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletContext;

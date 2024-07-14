@@ -8,6 +8,7 @@
 <ul>
     <li><a href="users/create">Create User</a></li>
     <li><a href="users">View Users</a></li>
+    <li><a href="todos">View Todos</a></li>
 </ul>
 </body>
 </html>

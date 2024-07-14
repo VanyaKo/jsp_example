@@ -6,12 +6,14 @@ import lombok.experimental.UtilityClass;
 public class WebConsts {
     //beans
     public static final String USER_SERVICE = "userService";
+    public static final String TODO_SERVICE = "todoService";
 
     //basic
     public static final String SLASH = "/";
 
     //root
     public static final String USERS = "users";
+    public static final String TODOS = "todos";
 
     //actions
     public static final String DELETE = "delete";
@@ -27,11 +29,13 @@ public class WebConsts {
     public static final String ROLE = "role";
     public static final String ERROR = "error";
     public static final String ROLES = "roles";
+    public static final String TITLE = "title";
 
     //jsp
     public static final String USERS_LIST_JSP = "/usersList.jsp";
     public static final String CREATE_USER_JSP = "/createUser.jsp";
     public static final String EDIT_USER_JSP = "/editUser.jsp";
+    public static final String TODO_LIST_JSP = "/todoList.jsp";
 
 
     //errors

@@ -1,7 +1,6 @@
-package com.kupreychik.chuck_berry_jakarta.model;
+package com.kupreychik.chuck_berry_jakarta.model.users;
 
-import com.kupreychik.chuck_berry_jakarta.model.enums.UserRole;
-import lombok.AllArgsConstructor;
+import com.kupreychik.chuck_berry_jakarta.model.users.enums.UserRole;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
