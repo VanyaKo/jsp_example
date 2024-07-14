@@ -54,10 +54,6 @@ public class UserService {
         return validator.isEmailExists(email, this.users);
     }
 
-    public boolean notValidName(String name) {
-        return validator.isNameExists(name, this.users);
-    }
-
     public String getMessage(String key) {
         return messages.getString(key);
     }

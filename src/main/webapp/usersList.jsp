@@ -14,7 +14,8 @@
     <table class="table table-striped">
         <thead>
         <tr>
-            <th sfcope="col">Name</th>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
             <th scope="col">Email</th>
             <th scope="col">Role</th>
             <th scope="col">Actions</th>
@@ -23,6 +24,7 @@
         <tbody>
         <c:forEach var="user" items="${users}">
             <tr>
+                <td>${user.id}</td>
                 <td>${user.name}</td>
                 <td>${user.email}</td>
                 <td>${user.role}</td>

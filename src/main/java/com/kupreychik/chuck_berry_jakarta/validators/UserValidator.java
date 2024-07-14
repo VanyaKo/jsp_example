@@ -12,8 +12,4 @@ public class UserValidator {
     public boolean isEmailExists(String email, List<User> users) {
         return users.stream().anyMatch(user -> user.getEmail().equals(email));
     }
-
-    public boolean isNameExists(String name, List<User> users) {
-        return users.stream().anyMatch(user -> user.getName().equals(name));
-    }
 }
