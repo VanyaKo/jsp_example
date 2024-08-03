@@ -11,7 +11,9 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import static com.kupreychik.chuck_berry_jakarta.model.users.enums.UserRole.*;
+import static com.kupreychik.chuck_berry_jakarta.model.users.enums.UserRole.ADMIN;
+import static com.kupreychik.chuck_berry_jakarta.model.users.enums.UserRole.CUSTOMER;
+import static com.kupreychik.chuck_berry_jakarta.model.users.enums.UserRole.MANAGER;
 
 @Getter
 public class UserService {

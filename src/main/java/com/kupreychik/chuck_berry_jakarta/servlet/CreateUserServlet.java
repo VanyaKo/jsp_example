@@ -14,6 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.CREATE;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.CREATE_USER_JSP;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.EMAIL;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.ERROR;
@@ -23,7 +24,6 @@ import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.ROLE;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.ROLES;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.SLASH;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.USERS;
-import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.CREATE;
 
 @Slf4j
 @WebServlet(SLASH + USERS + SLASH + CREATE)

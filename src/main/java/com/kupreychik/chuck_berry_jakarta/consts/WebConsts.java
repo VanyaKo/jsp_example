@@ -40,5 +40,4 @@ public class WebConsts {
 
     //errors
     public static final String ERROR_EMAIL_EXISTS = "error.email.exists";
-    public static final String ERROR_NAME_EXISTS = "error.name.exists";
 }

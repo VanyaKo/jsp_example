@@ -12,7 +12,10 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 
-import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.*;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.SLASH;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.USERS;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.USERS_LIST_JSP;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.USER_SERVICE;
 
 @Slf4j
 @WebServlet(SLASH + USERS)

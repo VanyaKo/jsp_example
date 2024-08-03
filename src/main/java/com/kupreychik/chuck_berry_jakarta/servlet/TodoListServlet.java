@@ -34,7 +34,7 @@ public class TodoListServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String title = req.getParameter(TITLE);
         List<Todo> todos = todoService.getTodos();
-        if(title != null) {
+        if (title != null) {
             todos = todoService.getTodosByTitle(todos, title);
         }
         req.setAttribute(TODOS, todos);

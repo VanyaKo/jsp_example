@@ -3,20 +3,27 @@ package com.kupreychik.chuck_berry_jakarta.servlet;
 import com.kupreychik.chuck_berry_jakarta.model.users.User;
 import com.kupreychik.chuck_berry_jakarta.model.users.enums.UserRole;
 import com.kupreychik.chuck_berry_jakarta.service.UserService;
-import jakarta.servlet.ServletContext;
-import lombok.extern.slf4j.Slf4j;
-
 import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.util.Optional;
 
-import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.*;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.EDIT;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.EDIT_USER_JSP;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.EMAIL;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.NAME;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.OLD_EMAIL;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.OLD_NAME;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.ROLE;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.SLASH;
+import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.USER;
 import static com.kupreychik.chuck_berry_jakarta.consts.WebConsts.USERS;
 
 @Slf4j
