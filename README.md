@@ -1,2 +1,3 @@
-Что здесь для меня полезного:
-- Использование ResourceBundle с поддержкой русского языка
+# Что здесь для меня полезного:
+- Использование `ResourceBundle` в `resources`
+- Использование `HttpClient` и `HttpRequest` в `TodoService.java`
